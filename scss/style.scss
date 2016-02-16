@@ -81,10 +81,13 @@ a {
     transform: translateY(-45%);
   }
 }
+html,
 body {
   margin: 0;
   background: #000;
   height: 100vh;
+  position: relative;
+
   overflow: hidden;
 }
 .column1 {

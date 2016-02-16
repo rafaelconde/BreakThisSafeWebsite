@@ -70,10 +70,12 @@ a {
     -o-transition: background 0.3s ease;
     transition: background 0.3s ease; }
 
+html,
 body {
   margin: 0;
   background: #000;
   height: 100vh;
+  position: relative;
   overflow: hidden; }
 
 .column1 {
