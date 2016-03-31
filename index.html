@@ -9,24 +9,289 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <div class="column1">
-      <div class="image-wrapper">
-        <img src="assets/watch.png" id="watch">
-        <img src="assets/UI.png" id="ui">
-        <img src="assets/knob.png" id="knob">
-      </div>
-    </div>
-    <div class="column2">
-      <div class="content-wrapper">
-        <div class="text-wrapper">
-          <h1>Break this Safe <span class="greyed-out uppercase">currently&nbsp;in&nbsp;development</span></h1>
-          <h2>An <span class="smallcaps">watch</span> game in which you take advantage of the Digital&nbsp;Crown and haptic feedback to break into a safe.</h2>
-          <a href="mailto:rafahari@me.com?Subject=Hi%20Rafa!%20About%20that%20beta%20test" target="_top" class="button uppercase">Get in the beta program</a>
+    <div class="gangsta-wrapper">
+      <div class="column1">
+        <div class="image-wrapper">
+          <img src="assets/watch.png" id="watch">
+          <video id="video" class="ui" preload="auto" muted="true" loop="loop" autoplay="true">
+            <source src="assets/gameplayVideo.mp4" type="video/mp4">
+          </video>
+          <img src="assets/poster.png" id="poster" class="ui">
         </div>
       </div>
-    </div>
-    <div class="footer">
-      <span class="greyed-out uppercase"><a href="http://rafaelconde.net">a game by Rafael Conde</a></span>
+      <div class="column2">
+        <div class="content-wrapper">
+          <div class="text-wrapper">
+            <h1>Break this Safe</h1>
+            <h2>An <span class="smallcaps">watch</span> game in which you take advantage of the Digital&nbsp;Crown and haptic feedback to break into a safe.</h2>
+            <a href="#" target="_blank" class="button uppercase">Free on the App Store</a>
+            <a href="#case-study" class="button alt-button uppercase">Read the Case Study</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <span class="greyed-out"><a href="http://rafaelconde.net" target="_blank">A game by Rafael Conde</a></span>
+      </div>
+    </div> <!-- gangsta-wrapper -->
+    <div class="" id="case-study">
+      <div class="column1">
+      </div>
+      <div class="column2">
+        <div class="content-wrapper">
+          <div class="text-wrapper">
+            <h1>Case Study</h1>
+
+            <p>Back in September 9, 2014, Tim Cook took the stage and announced the rumoured and highly anticipated <span class="smallcaps">watch</span>. It was a brand new product category for Apple and its first foray into wearable devices.</p>
+
+            <p>I remember reading, not long after, John Gruber&#8217;s take on this new device, especially his remarks on the Digital Crown:</p>
+
+            <blockquote>
+              <p>The digital crown feels amazing. It didn’t actually control anything on-screen on the demo watches I handled last week, but it has the most amazing feel of any analog controller I’ve ever used.</p>
+
+              <p><a target="_blank" href="https://daringfireball.net/2014/09/apple_watch"><em>Apple Watch: Initial Thoughts and Observations, DaringFireball.net</em></a></p>
+            </blockquote>
+
+            <p>Right there, the fact that this new input device was so new and simple to me, the precision and the <em>feel</em> it provided, it made me think of the analogy to a safe&#8217;s dial. And let me be honest, maybe it&#8217;s because I&#8217;m 25 years old, or maybe it&#8217;s because I&#8217;m from weird Europe, but I&#8217;ve never actually seen this type of safe in the real world, so the only reference I have is through the media, especially Hollywood, and 90% of the times the safe is being hacked.</p>
+
+            <p>The only use case for this analogy that I had in my head was to build a game where you have to hack into this safe, and the Digital Crown would be the dial. </p>
+
+            <p>Perfect.</p>
+
+            <p>Except for the fact that I didn&#8217;t have an <span class="smallcaps">watch</span>, or that I had no idea how the game would actually work, or that I had close to no experience with iOS development, or, and this was just a small thing, you couldn&#8217;t really create native apps on this device.</p>
+
+            <p>So I put this idea on my <em>that would be great</em> pile of ideas and move forward.</p>
+
+            <h2 id="youhavenoexcusesnow">You have no excuses now</h2>
+
+            <p>Almost a year later, June 8, 2015, I took a trip to London.</p>
+
+            <p>Supply for the <span class="smallcaps">watch</span> was still very short. Apple Store&#8217;s didn&#8217;t have any in stock and the only way you could get one was to order them online, in 2 or 3 countries. Not easy.</p>
+
+            <p>But, by some miracle, someone on Twitter was kind enough to let me know that there was this <a target="_blank" href="http://london.doverstreetmarket.com">one store</a> in London that had a couple watches in stock, you could in fact walk in the store and buy one these things. So I did.</p>
+
+            <p>Coincidentally, in that same week, Apple held the annual World Wide Developer&#8217;s Conference in San Francisco where they unveiled watchOS 2, and the ability to finally write native apps for this device.</p>
+
+            <p>The excuses I listed earlier, they were starting to get out of the way.</p>
+
+            <ul>
+              <li><span class="strikethrough">I didn&#8217;t have an <span class="smallcaps">watch</span>.</span></li>
+              <li><span class="strikethrough">You couldn&#8217;t really create native apps on this device.</span></li>
+              <li>I had no idea how the game would actually work.</li>
+              <li>I had close to no experience with iOS development.</li>
+            </ul>
+
+            <p><strong>2 out of 4.</strong></p>
+
+            <p>In that same week, I started watching this amazing show on Netflix, it&#8217;s called <a target="_blank" href="http://www.imdb.com/title/tt2431438/">Sense8</a> and in episode 1 this character named Wolfgang Bogdanow is &#8220;cracking the uncrackable&#8221; safe, using just sound, touch and extreme focus. </p>
+
+            <img src="assets/sense8.png" class="with-border" alt="Sense8 Lock-picking scene"/>
+
+            <p>I immediately knew how the game would work – the player would turn the Digital Crown to rotate the dial, and thanks to <span class="smallcaps">watch</span>&#8217;s haptic feedback, she could <em>feel</em> her way to the answer.</p>
+
+            <p><strong>3 out of 4.</strong></p>
+
+            <p>I was only missing someone with the coding skills to help me make this game a reality, and believe me or not, good developers are usually pretty busy. I&#8217;m a Designer with a Computer Science background, and except for some front end web development I never really worked as a programmer – but this was the perfect time to change that: It&#8217;s a cool product, there are no deadlines, a brand new device to code for, and a pretty simple one too (famous last words).</p>
+
+            <p><strong>4 out of 4.</strong></p>
+
+            <h2 id="embraceyourconstraints">Embrace your constraints</h2>
+
+            <p>Let me share with you some of the hoops that I had to go through when building Break this Safe.</p>
+
+            <p>This was the most constrained product I&#8217;ve designed, mostly by the nature of the device and its infancy as a platform, which made it the funnest as well.</p>
+
+            <p>The first wall I bumped into was a very surprising one. The most basic and crucial interaction of the game is to rotate this dial when the player rotates the Digital Crown, so the first thing I had to do was to rotate this image by 1% of 360 degrees for every <em>tick</em> of the Crown.</p>
+
+            <p><strong>You can&#8217;t rotate images on <span class="smallcaps">watch</span>.</strong></p>
+
+            <p>These are the properties that you can actually change:</p>
+
+            <ul>
+              <li>Alpha</li>
+              <li>Hidden</li>
+              <li>Installed</li>
+              <li>Horizontal</li>
+              <li>Vertical</li>
+              <li>Width</li>
+              <li>Height</li>
+            </ul>
+
+            <p>Pretty limited. The only workaround that I&#8217;ve found was to <em>scroll</em> through a list of 100 images, using watchOS 2&#8217;s new API, <a target="_blank" href="https://developer.apple.com/library/watchos/documentation/WatchKit/Reference/WKInterfacePicker_class/">WKInterfacePicker</a> and it&#8217;s Image Sequence style.</p>
+
+            <img src="assets/assets.jpg" alt="Assets for the knob" />
+
+            <p>As you might imagine, this is pretty bad for performance, especially on a first generation <span class="smallcaps">watch</span> that has pretty slow internals, and I&#8217;m not gonna lie – it took me months just to make this interaction to work. The app would simply crash when loading these 100 assets. So if you find yourself in a similar situation, here&#8217;s a couple of tips:</p>
+
+            <ul>
+              <li>Remove any transparency from your images, Apple recommends that you use a black background. Makes sense.</li>
+              <li>Compress your assets, and then compress again. And again. I ended up using only 4 colours, with a total of 5 KB per image (I was lucky enough to afford this, since I was only using black and white, and 2 shades of grey to blend them). I&#8217;ve use an app called <a target="_blank" href="https://pngmini.com">ImageAlpha</a> to help me with this.</li>
+              <li>Test on a real device. The simulator gave me no problems throughout most of the development journey, but when you ran it on a device, that&#8217;s when the <em>fun</em> begins.</li>
+            </ul>
+
+            <p>Next up, <strong>you can&#8217;t have an object on top of another</strong>, or in other words every single element of your layout will be stacked, either vertically or horizontally, but you can&#8217;t have, for example, a button on top of a picker, or a label on top of an image.</p>
+
+            <p>What you do have is groups.</p>
+
+            <p>Groups are the only way of nesting elements, allowing us to create more interesting layouts, so for every group you can stack its elements inside in a different orientation for example. Here&#8217;s the main menu&#8217;s UI with all it&#8217;s groups and elements (take a closer look at the element&#8217;s hierarchy list on the left:</p>
+
+            <img src="assets/groupsAndLayout.png" alt="Main Menu View" />
+
+            <p>Another neat trick you can use, is to set an image as the background for a group, that&#8217;s how in the gameplay view I have a button <em>on top</em> of the dial.
+            In this case the dial is a big group with a picker inside (that is hidden) and a button in the middle).</p>
+
+            <img src="assets/gameplayView.png" alt="Gameplay View" />
+
+            <p>Which leads us to the next part…</p>
+
+            <h2 id="animations">Animations</h2>
+
+            <p>Taking into account the properties that are at our control, mentioned above, I knew animations would be a very limited toolset for me, but still, I truly believe they add that extra layer of personality, care, and delight.</p>
+
+            <p>Break this Safe ships with only a handful of animated objects, I turned the dial back a couple of notches after a while to keep only what had purpose and usefulness.</p>
+
+            <p>Probably the most prominent animation is the <strong>Stats</strong> table.</p>
+
+            <img src="assets/menuAnimations.gif" alt="Menu Animations" />
+
+            <p>The way I achieved the effect above is to have a <em>Spacer Group</em>, which is just a group with nothing inside it, and animate it&#8217;s width from <strong>x</strong> to 0. So in this example, each cell of the table view has an image (the icon, which I animated the opacity from 0 to 1 in 0.3s), then the <em>Spacer Group</em>, and finally another group with two labels. Easy.</p>
+
+            <p>What we do is then animate the width of the <em>Spacer Group</em> from 0.7 (relative to the container) to 0.0.</p>
+
+            <p>Because every element is stacked, the Labels will be <em>pushed</em> alongside the <em>Spacer Group</em>. Makes sense? Here&#8217;s the same animation, but this time the <em>Spacer</em> has a red background.</p>
+
+            <img src="assets/menuAnimationsAnnoted.gif" alt="Menu Animations Annoteded" />
+
+            <p>The best resource I&#8217;ve found on Layout and Animations for the <span class="smallcaps">watch</span> is <a target="_blank" href="https://developer.apple.com/videos/play/wwdc2015/216/">WWDC 2015&#8217;s Session 216</a> – make sure to check it out!</p>
+
+            <h2 id="gameplay">Gameplay</h2>
+
+            <p>I am no game designer. Let&#8217;s make that clear.</p>
+
+            <p>But I am aware of that, so I designed the gameplay to be as automated as possible. And because of the constraints and nature of the device it <strong>had</strong> to be very simple and short.</p>
+
+            <p>You don&#8217;t want a level to be 10 minutes long, asking the player to hold her arm in the air for that long. It needs to be quick and painless. That&#8217;s the whole point of <span class="smallcaps">watch</span>, isn&#8217;t it? Maybe you&#8217;re in line to pay for your groceries, that sponsor break while you listen to your <a target="_blank" href="http://layout.fm">favourite podcast</a> kicks in, that&#8217;s where I want to position Break this Safe.</p>
+
+            <p>And remember the whole <em>it took me 3 months to load 100 assets and not crash</em> shenanigan? Yeah, I couldn&#8217;t really afford to add too much complexity to the gameplay view.</p>
+
+            <p>And the device and APIs at my disposal are so limited that the gameplay almost wrote itself. Let me give you an example:</p>
+
+            <p>In the first version of the game, you could select up to 3 different difficulty levels, you know, the classic Easy/Normal/Hard mode.</p>
+
+            <p>So I tried making more subtle haptic feedback for each mode, the harder the more subtle between the <em>you are getting close tap</em>, to the <em>this is the answer tap</em>. The problem with this approach is that you can&#8217;t design the taps, you have a limited number of different ones at your disposal, <a target="_blank" href="https://developer.apple.com/library/watchos/documentation/WatchKit/Reference/WKInterfaceDevice_class/#//apple_ref/c/tdef/WKHapticType">here&#8217;s what you have:</a></p>
+
+            <ul>
+              <li>Notification</li>
+              <li>DirectionUp</li>
+              <li>DirectionDown</li>
+              <li>Success</li>
+              <li>Failure</li>
+              <li>Retry</li>
+              <li>Start</li>
+              <li>Stop</li>
+              <li>Click</li>
+            </ul>
+
+            <p>Now if you actually feel all of the above, you&#8217;ll notice that most are super obvious, the complete opposite of a <em>subtle</em> tap, and most of them are very distinctive between themselves, that&#8217;s their whole point, to convey a message just by a series of vibrations.</p>
+
+            <p>So after testing every possible combination of two, there was only a realistic pair that were close enough to need some attention from the player to tell them apart, but distinctive enough so that it&#8217;s actually possible to tell them apart (NotificationUp and NotificationDown are exactly the same for example, that&#8217;s what I was using in a newly created <em>Impossible Mode</em> in early versions. It was legitimately evil).</p>
+
+            <p>Another pesky little detail regarding the haptic feedback, is that each type has a sound effect associated with it, so it was kind of embarrassing when I shipped a version to my beta testers and they had let me know that every time they would pass by the answer, a little joyful sound effect would play, making it blatantly obvious.</p>
+
+            <p>I missed this because I use my <span class="smallcaps">watch</span> exclusively with Silent Mode on, and this was one of the walls that I simply could not walk around. </p>
+
+            <p>Some of the things I tried to fix this was to play a silent audio file, which would prompt the player to connect headphone to her watch, try to play two haptic feedbacks at the same time, with the hope that it would cancel the first, nope.</p>
+
+            <p>So I had to give up, and present the player, with an alert box, on her first play, to turn Silent Mode on.</p>
+
+            <div class="image-center">
+              <img src="assets/silent.jpg" class="watch-screenshot" alt="Please turn Silent Mode on" />
+            </div>
+
+            <p>The last gameplay element to be introduced, a very important one, was the timer.</p>
+
+            <p>The first feedback I got from my beta testers was that the game was too easy, and I agreed, once the gameplay <em>clicked</em> with you, finding the answer was just to simple. So I had to introduced something to make it harder, and the solution was very obvious – a timer.</p>
+
+            <p>The player has 30 seconds to complete all 3 rounds, if the timer runs out before she does, it&#8217;s game over. If she makes one wrong guess, it&#8217;s game over.</p>
+
+            <p>Since adding the timer, the percentage of games won for me definitely decreased, I get around 80%, and I&#8217;m the one that built it so it definitely strikes a good balance in my opinion, and most importantly it opened a bunch of possibilities for future updates (<em>hint hint</em>).</p>
+
+            <p>Another obvious feature that I&#8217;ve left out was global leaderboards, or GameCenter support, and the reason for that is that is simply to easy to cheat your way to the top.</p>
+
+            <p>Remember that part where I have to suggest users to turn Silent Mode on? Yeah if the player wants she can turn Silent Mode off and it&#8217;s the easiest game on the planet. So the fact that every stats and leaderboards are personal, just for the player, it appeals to honesty, since cheating your way up is just cheating yourself.</p>
+
+            <img src="assets/oldVersions.png" alt="Older Versions of the game" />
+
+            <img src="assets/iconSet.png" alt="Icon Set" />
+
+            <img src="assets/winAnimation.png" alt="Win Animation" />
+
+            <img src="assets/gameOverAnimation.png" alt="Game Over Animation" />
+
+            <h2 id="ioscounterpart">iOS Counterpart</h2>
+
+            <p>To ship an app for the <span class="smallcaps">watch</span> you <em>still</em> have to write an iOS app, and in this case it wouldn&#8217;t need to be a complex one, but here&#8217;s what I needed it to have:</p>
+
+            <ul>
+              <li>Instructions – teach the user how to play the game, this would be overkill to ship in the watch app.</li>
+              <li>Credits, About page, support links, etc&#8230;</li>
+              <li>Some kind of In-App Purchases (more on this later)</li>
+              <li>A way to read this very same Case Study – this journey was very important and an insightful one for me, and I, as a customer, love to read this type of articles, so it was important to me to have it in the app.</li>
+            </ul>
+
+            <p>And so I did, there isn&#8217;t much to share here, but developing for iOS is in my opinion, and experience, way harder than for watchOS, which makes sense, iOS is a very matured platform and with a lot more complexity, so there&#8217;s just so much more to learn.</p>
+
+            <p>The thing that gave me a minor headache was definitely the background video. </p>
+
+            <p>You see, I wanted to have this video of the <span class="smallcaps">watch</span>, and the game&#8217;s gameplay looping, it&#8217;s a subtle way to further familiarize the player on the game mechanics, and if by any chance you download the app but don&#8217;t have an <span class="smallcaps">watch</span>, you could get a good idea of how the game would look (I purposely made the video real size). But the thing was that I wanted to video to loop, and while you navigate through the app, the video would not reload, it would just be there.</p>
+
+            <img src="assets/UISkeleton.png" alt="UI Overview" />
+
+            <p>So long story short, the way I achieved this was to load the video in the main NavigationViewController, and have every child view have a transparent background. Of course nothing would be good without some nasty bugs, so I found out that if you have a view with a transparent background that out-of-the-box native animation between views in a Navigation View Controller, would stutter, and look pretty bad. </p>
+
+            <p>Here&#8217;s an example:</p>
+
+            <div class="image-center">
+              <img src="assets/bug1.gif" class="ios-screenshot" alt="Transition Bug" />
+            </div>
+
+            <p>But it wasn&#8217;t hard to fix, I simply added the transitions myself, a basic change of opacity. Here&#8217;s how the final version of the iOS app looks like:</p>
+
+            <div class="image-center">
+              <img src="assets/iOSConterpartoverview.gif" class="ios-screenshot" alt="iOS app overview" />
+            </div>
+
+            <h2 id="businessmodel">Business Model</h2>
+
+            <p>I&#8217;ve had long discussions about how I would price the game with myself, but after listening to <a target="_blank" href="https://www.relay.fm/radar/18">episode 18 of Under the Radar</a>, a podcast about iOS Development hosted by my heroes <a target="_blank" href="https://marco.org">Marco Arment</a> and <a target="_blank" href="https://david-smith.org">David Smith</a>, I&#8217;ve decided to go with Free, with donations.</p>
+
+            <p>The huge factor that influenced me to take this route is the fact that there is no way to prevent anyone to buy the app, if the player doesn&#8217;t have an <span class="smallcaps">watch</span>. Meaning that if the app would have an upfront cost, I would probably get a ton of emails from people that bought it and had no way to actually play it.</p>
+
+            <p>In-App Purchases were out of the table giving the way the game is built, at the moment I have no way to <em>lock</em> features and still be proud of the result.</p>
+
+            <p>Oh, and I hate ads.</p>
+
+            <p>So in the end I&#8217;ve opted to offer the game for free, with an optional tip jar (again, inspired by David Smith).</p>
+
+            <div class="image-center">
+              <img src="assets/donations.jpg" class="ios-screenshot" alt="Donations" />
+            </div>
+
+            <h2 id="closingremarks">Closing remarks</h2>
+
+            <p>Designing and building this game was the most fun I had in a long time, and a great way for me, a designer, to dip my toes in the programming world – the limitations of this platform were big eye openers and that feeling when you <em>finally</em> find a way around a problem you had, that feeling, is something else!</p>
+
+            <p>To be honest I have no big expectations or goals for this project, I genuinely hope people can have fun playing it and it would be a dream come true if I can justify continued development, I have some big ideas for the future.</p>
+
+            <p>Thank you so much for reading this, which to be honest is more of a journal than a case study, I hope you found it useful in some way.</p>
+
+            <img src="assets/signature.png" class="signature" alt="Signature" />
+            <p>– Rafael Conde</p>
+
+            <img src="assets/logo.png" class="logo" alt="Break this Safe Logo" />
+            <a target="_blank" href="#" target="_top" class="button uppercase">Free on the App Store</a>
+          </div>
+        </div>
+      </div>
     </div>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -36,7 +301,6 @@
 
       ga('create', 'UA-40334735-5', 'auto');
       ga('send', 'pageview');
-
     </script>
   </body>
 </html>

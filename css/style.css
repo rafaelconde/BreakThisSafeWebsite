@@ -5,13 +5,13 @@ body {
   color: #fff; }
 
 h1 {
-  font-weight: 300;
-  font-size: 46px;
+  font-weight: 600;
+  font-size: 44px;
   letter-spacing: 2px;
   margin: 0; }
   @media (max-width: 320px) {
     h1 {
-      font-size: 40px; } }
+      font-size: 36px; } }
   h1 span {
     font-size: 20px;
     letter-spacing: 1px;
@@ -46,11 +46,13 @@ a {
 .button {
   display: block;
   position: relative;
+  float: left;
   width: 100%;
   padding: 15px 0 15px 0;
-  background: #4DBEF9;
-  border-radius: 2px;
+  background: #519D9E;
+  border-radius: 13px;
   text-align: center;
+  font-weight: 500;
   color: #fff;
   text-decoration: none;
   -webkit-transition: background 0.3s ease;
@@ -62,21 +64,39 @@ a {
       margin: auto; } }
   @media (min-width: 500px) {
     .button {
-      max-width: 350px; } }
+      max-width: 45%; } }
+  @media (max-width: 1100px) {
+    .button {
+      max-width: 100%;
+      margin-bottom: 20px; } }
   .button:hover {
-    background: #0670a7;
+    background: #1d3839;
     -webkit-transition: background 0.3s ease;
     -moz-transition: background 0.3s ease;
     -o-transition: background 0.3s ease;
     transition: background 0.3s ease; }
 
+.alt-button {
+  background: none;
+  border: 2px solid #fff;
+  margin-left: 5%;
+  padding: 13px 0 13px 0; }
+  @media (min-width: 500px) {
+    .alt-button {
+      max-width: 45%; } }
+  @media (max-width: 1100px) {
+    .alt-button {
+      max-width: 100%;
+      margin-left: 0; } }
+
 html,
 body {
   margin: 0;
   background: #000;
-  height: 100vh;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
+
+.gangsta-wrapper {
+  height: 100vh; }
 
 .column1 {
   position: relative;
@@ -97,8 +117,7 @@ body {
     .column2 {
       position: absolute;
       width: 100vw;
-      background: rgba(0, 0, 0, 0.4);
-      text-align: center; } }
+      background: rgba(0, 0, 0, 0.6); } }
 
 .image-wrapper {
   position: relative;
@@ -108,14 +127,15 @@ body {
   transform: translateY(-50%);
   position: absolute;
   width: 300px;
-  height: 2128px;
-  animation: 4s linear infinite shake; }
+  height: 2128px; }
   @media (max-height: 740px) {
     .image-wrapper {
       top: 45%;
       -webkit-transform: translateY(-45%);
       -ms-transform: translateY(-45%);
       transform: translateY(-45%); } }
+  .image-wrapper #poster {
+    display: none; }
   @media (min-width: 900px) {
     .image-wrapper {
       right: 0; } }
@@ -123,73 +143,44 @@ body {
     .image-wrapper {
       position: relative;
       margin: auto; }
+      .image-wrapper #video {
+        display: none; }
+      .image-wrapper #poster {
+        display: inline; }
       .image-wrapper img {
-        filter: blur(10px);
-        -webkit-filter: blur(10px); } }
+        filter: blur(15px);
+        -webkit-filter: blur(15px); } }
 
 #watch {
   position: absolute;
   right: 0;
   width: 300px; }
 
-#ui {
+.ui {
   position: absolute;
   top: 802px;
-  right: 61px;
-  width: 192px; }
+  right: 56px;
+  width: 195px; }
 
-#knob {
-  position: absolute;
-  top: 834px;
-  right: 61px;
-  width: 192px;
-  animation: 4s linear infinite rotate; }
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg); }
-  20% {
-    transform: rotate(45deg); }
-  40% {
-    transform: rotate(120deg); }
-  45% {
-    transform: rotate(80deg); }
-  80% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(0deg); } }
-@keyframes shake {
-  0% {
-    right: 0px; }
-  89% {
-    right: 0px; }
-  90% {
-    right: -7px; }
-  92% {
-    right: 7px; }
-  94% {
-    right: -7px; }
-  96% {
-    right: 7px; }
-  100% {
-    right: 0px; } }
 .content-wrapper {
+  height: 2128px;
+  padding-left: 100px; }
+  @media (max-width: 900px) {
+    .content-wrapper {
+      padding-left: 0; } }
+
+.gangsta-wrapper .content-wrapper {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  height: 2128px;
-  padding-left: 100px; }
+  transform: translateY(-50%); }
   @media (max-height: 740px) {
-    .content-wrapper {
+    .gangsta-wrapper .content-wrapper {
       top: 45%;
       -webkit-transform: translateY(-45%);
       -ms-transform: translateY(-45%);
       transform: translateY(-45%); } }
-  @media (max-width: 900px) {
-    .content-wrapper {
-      padding-left: 0; } }
 
 .text-wrapper {
   position: relative;
@@ -203,7 +194,7 @@ body {
 
 .footer {
   position: absolute;
-  bottom: 30px;
+  top: 92vh;
   width: 100%;
   text-align: center;
   font-size: 18px; }
@@ -225,3 +216,72 @@ body {
     -moz-transition: opacity 0.3s ease;
     -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; }
+
+#case-study h1 {
+  margin-bottom: 40px; }
+#case-study h2 {
+  font-weight: 400;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-top: 80px;
+  margin-bottom: 40px; }
+#case-study p {
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 30px;
+  margin-bottom: 20px; }
+#case-study a {
+  color: #519D9E;
+  text-decoration: none; }
+#case-study blockquote {
+  border-left: 2px solid #fff;
+  padding-left: 40px;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+#case-study ul {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  -webkit-padding-start: 20px; }
+  #case-study ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    line-height: 30px; }
+#case-study .strikethrough {
+  text-decoration: line-through; }
+#case-study img {
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+#case-study .image-center {
+  width: 100%;
+  text-align: center; }
+#case-study .out-of-bounds {
+  height: 78px;
+  width: auto; }
+#case-study .with-border {
+  border: 2px solid #fff; }
+#case-study .watch-screenshot {
+  max-width: 200px; }
+#case-study .ios-screenshot {
+  max-width: 350px; }
+#case-study .signature {
+  max-width: 190px;
+  margin-bottom: -20px; }
+#case-study .logo {
+  max-width: 350px;
+  margin-bottom: 20px;
+  margin-top: 100px; }
+#case-study .button {
+  color: #fff;
+  margin-left: 0;
+  float: none;
+  width: 100%;
+  max-width: 350px; }
+#case-study .text-wrapper {
+  top: 200px;
+  padding-bottom: 200px; }
+#case-study .column2 {
+  height: auto; }
