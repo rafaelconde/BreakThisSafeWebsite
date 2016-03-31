@@ -322,6 +322,18 @@ body {
   .press .content-wrapper .text-wrapper {
     top: 14vh;
     padding-bottom: 200px; }
+    .press .content-wrapper .text-wrapper a {
+      color: #519D9E;
+      -webkit-transition: color 0.3s ease;
+      -moz-transition: color 0.3s ease;
+      -o-transition: color 0.3s ease;
+      transition: color 0.3s ease; }
+      .press .content-wrapper .text-wrapper a:hover {
+        color: #376b6b;
+        -webkit-transition: color 0.3s ease;
+        -moz-transition: color 0.3s ease;
+        -o-transition: color 0.3s ease;
+        transition: color 0.3s ease; }
 .press a {
   color: #519D9E;
   text-decoration: none; }
@@ -346,8 +358,18 @@ body {
 .press .back-link {
   opacity: 0.5;
   display: block;
-  color: #fff;
-  margin-bottom: 20px; }
+  color: #fff !important;
+  margin-bottom: 20px;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+  .press .back-link:hover {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
   .press .back-link span {
     position: relative;
     bottom: -4px;
