@@ -285,3 +285,46 @@ body {
   padding-bottom: 200px; }
 #case-study .column2 {
   height: auto; }
+
+.press p {
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 30px;
+  margin-bottom: 20px; }
+.press .content-wrapper {
+  height: auto; }
+  .press .content-wrapper .text-wrapper {
+    top: 14vh;
+    padding-bottom: 200px; }
+.press a {
+  color: #519D9E;
+  text-decoration: none; }
+.press .details {
+  margin-top: 40px; }
+.press .media-kit {
+  margin-top: 100px; }
+.press img {
+  width: 100%; }
+.press .ios-screenshots,
+.press .watch-screenshots {
+  margin-bottom: 20px; }
+  .press .ios-screenshots img,
+  .press .watch-screenshots img {
+    width: 18%;
+    margin-right: 1%; }
+.press .app-icons {
+  margin-bottom: 20px; }
+  .press .app-icons img {
+    width: 38%;
+    margin: 0 5% 0 5%; }
+.press .back-link {
+  opacity: 0.5;
+  display: block;
+  color: #fff;
+  margin-bottom: 20px; }
+  .press .back-link span {
+    position: relative;
+    bottom: -4px;
+    width: 13px;
+    height: 22px;
+    margin-right: 5px; }
