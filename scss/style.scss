@@ -7,7 +7,7 @@
 body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
 }
 h1 {
@@ -29,7 +29,10 @@ h2 {
   letter-spacing: 1px;
   line-height: 32px;
   margin: 10px 0 20px 0;
-  @media (max-width: 320px) { font-size: 20px; }
+  @media (max-width: 900px) {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 a {
   color: inherit;
@@ -40,9 +43,6 @@ a {
 }
 .uppercase {
   text-transform: uppercase;
-}
-.greyed-out {
-  opacity: 0.5;
 }
 .button {
   display: block;
@@ -59,7 +59,7 @@ a {
   background: #519D9E;
   border-radius: 13px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
   text-decoration: none;
   -webkit-transition: background 0.3s ease;
@@ -105,6 +105,12 @@ body {
   position: relative;
 }
 .gangsta-wrapper { height: 100vh; }
+.gangsta-wrapper .text-wrapper {
+  @media (max-width: 900px) {
+    text-align: center;
+    width: 90%;
+  }
+}
 .column1 {
   position: relative;
   width: 35vw;
@@ -174,16 +180,23 @@ body {
   top: 802px;
 }
 .footer {
+  pointer-events: none;
   position: absolute;
-  top: 92vh;
+  top: 90vh;
+  // opacity: 0.5;
+  a {
+    text-decoration: none;
+    pointer-events: all;
+  }
+  @media (max-height: 700px) { top: 84vh; }
   width: 100%;
   text-align: center;
   font-size: 18px;
   @media (max-height: 540px) { bottom: 10px; }
   .greyed-out {
-    a { text-decoration: none; }
+    opacity: 0.5;
     padding-bottom: 2px;
-    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
     -webkit-transition: opacity 0.3s ease;
     -moz-transition: opacity 0.3s ease;
     -o-transition: opacity 0.3s ease;
@@ -196,6 +209,27 @@ body {
     -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
   }
+}
+
+.other-links {
+  margin-top: 10px;
+  a {
+    opacity: 0.5;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
+  a:hover {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
+  // a:first-child { margin-right: 56px; }
 }
 
 #case-study {
