@@ -102,7 +102,10 @@ body {
   background: #000;
   position: relative;
 }
-.gangsta-wrapper { height: 100vh; }
+.gangsta-wrapper {
+  height: 100vh;
+  width: 100vw;
+}
 .gangsta-wrapper .text-wrapper {
   @media (max-width: 900px) {
     text-align: center;
