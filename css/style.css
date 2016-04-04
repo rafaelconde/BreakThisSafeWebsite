@@ -244,74 +244,76 @@ body {
     -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; }
 
-#case-study h1 {
-  margin-bottom: 40px; }
-#case-study h2 {
-  font-weight: 400;
-  font-size: 36px;
-  color: #FFFFFF;
-  margin-top: 80px;
-  margin-bottom: 40px; }
-#case-study p {
-  font-size: 20px;
-  color: #FFFFFF;
-  line-height: 30px;
-  margin-bottom: 20px; }
-#case-study a {
-  color: #519D9E;
-  text-decoration: none; }
-#case-study blockquote {
-  border-left: 2px solid #fff;
-  padding-left: 40px;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  margin-top: 40px;
-  margin-bottom: 40px; }
-#case-study ul {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  -webkit-padding-start: 20px; }
-  #case-study ul li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    line-height: 30px; }
-#case-study .strikethrough {
-  text-decoration: line-through; }
-#case-study img {
-  width: 100%;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px; }
-#case-study .image-center {
-  width: 100%;
-  text-align: center; }
-#case-study .out-of-bounds {
-  height: 78px;
-  width: auto; }
-#case-study .with-border {
-  border: 2px solid #fff; }
-#case-study .watch-screenshot {
-  max-width: 200px; }
-#case-study .ios-screenshot {
-  max-width: 350px; }
-#case-study .signature {
-  max-width: 190px;
-  margin-bottom: -20px; }
-#case-study .logo {
-  max-width: 350px;
-  margin-bottom: 20px;
-  margin-top: 100px; }
-#case-study .button {
-  color: #fff;
-  margin-left: 0;
-  float: none;
-  width: 100%;
-  max-width: 350px; }
-#case-study .text-wrapper {
-  top: 200px;
-  padding-bottom: 200px; }
-#case-study .column2 {
-  height: auto; }
+#case-study {
+  width: 100vw !important; }
+  #case-study h1 {
+    margin-bottom: 40px; }
+  #case-study h2 {
+    font-weight: 400;
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-top: 80px;
+    margin-bottom: 40px; }
+  #case-study p {
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 30px;
+    margin-bottom: 20px; }
+  #case-study a {
+    color: #519D9E;
+    text-decoration: none; }
+  #case-study blockquote {
+    border-left: 2px solid #fff;
+    padding-left: 40px;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  #case-study ul {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    -webkit-padding-start: 20px; }
+    #case-study ul li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      line-height: 30px; }
+  #case-study .strikethrough {
+    text-decoration: line-through; }
+  #case-study img {
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  #case-study .image-center {
+    width: 100%;
+    text-align: center; }
+  #case-study .out-of-bounds {
+    height: 78px;
+    width: auto; }
+  #case-study .with-border {
+    border: 2px solid #fff; }
+  #case-study .watch-screenshot {
+    max-width: 200px; }
+  #case-study .ios-screenshot {
+    max-width: 350px; }
+  #case-study .signature {
+    max-width: 190px;
+    margin-bottom: -20px; }
+  #case-study .logo {
+    max-width: 350px;
+    margin-bottom: 20px;
+    margin-top: 100px; }
+  #case-study .button {
+    color: #fff;
+    margin-left: 0;
+    float: none;
+    width: 100%;
+    max-width: 350px; }
+  #case-study .text-wrapper {
+    top: 200px;
+    padding-bottom: 200px; }
+  #case-study .column2 {
+    height: auto; }
 
 .press p {
   font-size: 20px;
