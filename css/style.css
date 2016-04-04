@@ -94,7 +94,8 @@ body {
   position: relative; }
 
 .gangsta-wrapper {
-  height: 100vh; }
+  height: 100vh;
+  width: 100vw !important; }
 
 @media (max-width: 900px) {
   .gangsta-wrapper .text-wrapper {
