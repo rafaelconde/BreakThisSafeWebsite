@@ -366,6 +366,13 @@ blockquote {
   #case-study .text-wrapper {
     top: 200px;
     padding-bottom: 200px; }
+    @media (max-height: 800px) {
+      #case-study .text-wrapper {
+        top: 500px; } }
+  @media (max-height: 800px) and (max-width: 900px) {
+    #case-study .text-wrapper {
+      top: 200px; } }
+
   #case-study .column2 {
     height: auto; }
 
