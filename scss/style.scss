@@ -76,8 +76,10 @@ a { color: inherit; }
 }
 .alt-button {
   background: none;
-  border: 2px solid #fff;
+  border: 1px solid #a6a6a6;
   margin-left: 5%;
+  padding: 13px 0 13px 0;
+  border-radius: 6px;
   @media (min-width: 500px) { max-width: 45%; }
   @media (max-width: 1100px) {
     max-width: 100%;
@@ -367,6 +369,17 @@ blockquote {
     padding-bottom: 200px;
   }
   .column2 { height: auto; }
+}
+
+.appStoreButton {
+  left: 0;
+  position: relative;
+  float: left;
+  height: 52px;
+  margin-bottom: 20px;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 }
 
 .press {
