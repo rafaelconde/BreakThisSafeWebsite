@@ -367,6 +367,12 @@ blockquote {
   .text-wrapper {
     top: 200px;
     padding-bottom: 200px;
+    @media (max-height: 800px) {
+      top: 500px;
+      @media (max-width: 900px) {
+        top: 200px;
+      }
+    }
   }
   .column2 { height: auto; }
 }
